@@ -1,0 +1,121 @@
+
+<!-- Execute all scripts from one package under one test-->
+
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <classes>
+     <!-- BOTH THE CLASSES INCLUDED IN ONE TEST -->
+           <class name="TestNGPackage.TestNGfirstprogram"/>
+           <class name="TestNGPackage.Testngsecondprogram"/>
+           
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+<!-- Execute all scripts from one package under one test and specific  groups-->
+
+<suite name="Suite" parallel="none">
+  <test name="Test">
+     <groups>
+     <run>
+         <include name="smoketest"></include>
+    </run>
+	</groups>
+    <classes>
+     <!-- BOTH THE CLASSES INCLUDED IN ONE TEST -->
+           <class name="TestNGPackage.TestNGfirstprogram"/>
+           <class name="TestNGPackage.Testngsecondprogram"/>
+           
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- Execute all scripts from one package under two tests -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- INCLUDE 2 CLASSES IN 2 SEPERATE TESTS -->
+<suite name="Regresison suite One" >
+<test name="Regresison Test One" >
+<classes> 
+ <class name="TestNGPackage.TestNGFirstProgram"/>
+</classes>
+</test> 
+<test name="RegresionTest two" > 
+<classes> 
+ <class name="TestNGPackage.TestNGFirstProgram"/>
+      <class name="TestNGPackage.TestNGSecondProgram"/>
+</classes>
+</test>
+</suite> 
+
+<!-- Execute packages  -->
+<suite name="Suite One"> 
+<test name="Test One" >
+<packages>
+<package name="TestNGPackage" /> 
+<package name="TestNGPackage2" /> 
+</packages>
+</test>
+ </suite>
+ 
+
+<!--  ALL PACKAGES IN SINGLE SUIT -->
+<suite name="Suite One"> 
+<test name="Test One" > 
+<packages>
+     <package name=".*" />
+</packages> 
+</test>
+
+
+<!-- EXECUTE SPECIFIC METHOD IN CLASS /PACKAGE -->
+
+
+<suite name="Suite One">
+<test name="Test One" > 
+<classes> 
+<class name="TestNGPackage.TestNGFirstProgram" /> 
+<methods> 
+<exclude name="FirstTestverifyRegisterLink" />
+</methods>
+
+</classes> 
+<packages> 
+<package name="TestNGThreePack" /> 
+</packages> 
+</test> 
+</suite> 
+
+
+<!--  RUN ONLY SELCTED PACKAGE -->
+
+<suite name="Suite One"> 
+<test name="Test One" > 
+<packages> 
+    <package name=".*"> 
+<include name="TestNGOnePack" />
+</package> 
+</packages> 
+</test> 
+</suite> 
+
+
+
+<!--  RUN GROUPS IN SINGLE SUIT -->
+<suite name="Suite One"> 
+<test name="Test One" > 
+ <groups>
+     <run>
+         <include name="smoke"></include>
+    </run>
+</groups>
+<classes>  
+      <class name="TestNGPackage.TestNGThirdProgram" />
+     <class name="TestNGPackage.TestNGSecondProgram"/>
+</classes>
+</test>
+</suite> 
+

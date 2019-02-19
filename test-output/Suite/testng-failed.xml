@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="TestNGPackage.TestNGSecondProgram">
+        <methods>
+          <include name="SecondTestuserRegistration"/>
+          <include name="openApplication"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- TestNGPackage.TestNGSecondProgram -->
+      <class name="TestNGPackage.TestNGFirstscript">
+        <methods>
+          <include name="UserregistraionTest"/>
+          <include name="closeapplication"/>
+          <include name="VerifyRegisterlink"/>
+          <include name="openapplication"/>
+        </methods>
+      </class> <!-- TestNGPackage.TestNGFirstscript -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <classes>
+      <class name="TestNGPackage2.TestNGFirstProgram"/>
+      <class name="TestNGPackage2.TestNGThreeTests"/>
+      <class name="TestNGPackage.TestNGFirstscript"/>
+      <class name="TestNGPackage.TestNGDataProviderTest"/>
+      <class name="TestNGPackage.TestNGThirdProgram"/>
+      <class name="TestNGPackage2.NewTestNGScript"/>
+      <class name="TestNGPackage2.Sample_Login"/>
+      <class name="TestNGPackage.TestNGThreeTests"/>
+      <class name="TestNGPackage2.TestNGDataProviderTest"/>
+      <class name="TestNGPackage.Sample_Login"/>
+      <class name="TestNGPackage2.TestNGFlightRegistration"/>
+      <class name="TestNGPackage2.TestNGRegistationTest2nd"/>
+      <class name="TestNGPackage.TestNGFirstProgram"/>
+      <class name="TestNGPackage2.TestNGSecondProgram"/>
+      <class name="TestNGPackage2.TestNGThirdProgram"/>
+      <class name="TestNGPackage.TestNGSecondProgram"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

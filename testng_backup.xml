@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+      <groups>
+     <run>
+         <include name="smoketest"></include>
+    </run>
+	</groups>
+      
+    <classes>
+      <!--<class name="TestNGPackage.Sample_Login"/>-->
+      <class name="TestNGPackage.TestNGFirstscript"/>
+      <!--<class name="TestNGPackage.TestNGDataProviderTest"/>-->
+     <!-- <class name="TestNGPackage.TestNGThirdProgram"/>-->
+     <!-- <class name="TestNGPackage.TestNGFirstProgram"/>-->
+    <!--  <class name="TestNGPackage.TestNGThreeTests"/>-->
+      <class name="TestNGPackage.TestNGSecondProgram"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
